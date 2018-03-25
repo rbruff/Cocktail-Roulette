@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>App rough draft</title>
+
+  <!-- google fonts  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Megrim|Oleo+Script+Swash+Caps|Pacifico|Poiret+One" rel="stylesheet">
+  <!-- materialize -->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <!-- style sheet -->
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <!-- hover.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css" />
+</head>
+
+<body class="black">
+  <!-- navbar -->
+  <nav class="black" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo" style="color:red;font-family: 'Megrim', cursive;">
+        <img class="responsive-img" id="logo-icon" src="images/icons-collection/png/009-glass.png">Cocktail Roulette </a>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="#">Navbar Link</a>
+        </li>
+        <li>
+          <a href=""></a>
+        </li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li>
+          <a href="#">Navbar Link</a>
+        </li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse">
+        <i class="material-icons">menu</i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HOME w roulette btn -->
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br>
+        <br>
+        <h1 class="header center white-text" style="font-family: 'Pacifico', cursive; font-size:60pt;">What are you drinking tonight???</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Click the shaker to find out what you're drinking tonight!</h5>
+        </div>
+        <div class="row center">
+          <button class="waves-effect waces-light black hvr-buzz" id="shaker-btn">
+            <img class="responsive-img" id="shaker-icon" src="images/icons-collection/png/28-oz-3-piece-ss-cocktail-shaker-logo-designer_1.png">
+          </button>
+        </div>
+        <br>
+        <br>
+
+      </div>
+    </div>
+    <div class="parallax">
+      <img src="images/GoldenBar.jpg" alt="Bar Shelves">
+    </div>
+  </div>
+
+  <!-- featured drink section -->
+  <div class="container black white-text">
+    <div class="section">
+
+      <div class="row">
+        <h2 class="center" style="font-family: 'Pacifico', cursive;">Featured Drinks</h2>
+        <h5 class="center">Cocktails hand-selected for you by the members of our team</h5>
+      </div>
+
+      <!--   row of cards   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/250x250.png">
+              <span class="card-title">Name of Drink</span>
+            </div>
+            <div class="card-content black">
+                <p class="center">"Enter comment here"
+                </p>
+                <p class="center">Selected by:<br>your name</p>
+              </div>
+            <div class="card-action center black">
+              <a class="waves-effect waves-light btn red darken-2">
+                <i class="material-icons left">open_in_new</i>recipe</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img id="feature-drink" src="images/pom-tini.jpg">
+              <span class="card-title">Pomegranate Martini</span>
+            </div>
+            <div class="card-content black">
+              <p class="center">"Not too sweet, not too tart, and hard to mess up. This is my new go to!"
+              </p>
+              <p class="center">Selected by:<br>Renee</p>
+            </div>
+            <div class="card-action center black">
+              <a class="waves-effect waves-light btn red darken-2">
+                <i class="material-icons left">open_in_new</i>recipe</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/250x250.png">
+              <span class="card-title">Name of Drink</span>
+            </div>
+            <div class="card-content black">
+                <p class="center">"Enter comment here"
+                  </p>
+                  <p class="center">Selected by:<br>your name</p>
+            </div>
+            <div class="card-action center black">
+              <a class="waves-effect waves-light btn red darken-2">
+                <i class="material-icons left">open_in_new</i>recipe</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Cocktails pic -->
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <!-- <h5 class="header col s12 light">we can maybe put some text or like a cute quote or something here over the pic</h5> -->
+        </div>
+      </div>
+    </div>
+    <div class="parallax">
+      <img src="images/cocktails.jpg" alt="Cocktails Sign" id="parallax-img">
+    </div>
+  </div>
+
+  <!-- next section -->
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center white-text">
+          <h3>
+            <i class="mdi-content-send brown-text"></i>
+          </h3>
+          <h4>this is where the drinks and videos should be generated</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque
+            tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a
+            sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam
+            eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum
+            sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum
+            primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <!-- <h5 class="header col s12 light">coool text or quote??</h5> -->
+        </div>
+      </div>
+    </div>
+    <div class="parallax">
+      <img src="images/dimBar.jpg" alt="Dimly lit bar" id="parallax-img">
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of up and coming full stack web developers working on this project like it's our full time job! This
+            web app was created to fine tune our skills in UI/UX design, APIs, and Javascript. Contact any of us to take
+            on your next webpage and/or web app.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Team Members</h5>
+          <ul>
+            <li>
+              <a class="white-text" href="#!">Renee</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Sienna</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Edgar</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Darrell</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li>
+              <a class="white-text" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>
