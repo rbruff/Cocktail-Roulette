@@ -15,6 +15,8 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <!-- hover.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css" />
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="images/icons-collection/png/010-cocktail-1.png" />
 </head>
 
 <body class="black">
@@ -69,7 +71,7 @@
         <br>
         <h1 class="header center white-text" style="font-family: 'Pacifico', cursive; font-size:60pt;">What are you drinking tonight???</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Click the shaker to find out what you're drinking tonight!</h5>
+          <h5 class="header col s12 light">Click the shaker to find out!</h5>
         </div>
         <div class="row center">
           <button class="waves-effect waces-light black hvr-buzz" id="shaker-btn">
@@ -121,7 +123,7 @@
                 <p>A bunch of text</p>
               </div>
               <div class="modal-footer">
-                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
               </div>
             </div>
           </div>
@@ -140,9 +142,20 @@
                 <br>Renee</p>
             </div>
             <div class="card-action center black">
-              <a class="waves-effect waves-light btn red darken-2">
+              <a class="waves-effect waves-light btn red darken-2 modal-trigger" href="#feature-recipe2">
                 <i class="material-icons left">open_in_new</i>recipe</a>
             </div>
+
+              <!-- Modal Structure -->
+              <div id="feature-recipe2" class="modal">
+                  <div class="modal-content">
+                    <h4>Recipe Name</h4>
+                    <p>A bunch of text</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+                  </div>
+                </div>
           </div>
         </div>
 
@@ -159,9 +172,20 @@
                 <br>your name</p>
             </div>
             <div class="card-action center black">
-              <a class="waves-effect waves-light btn red darken-2">
+              <a class="waves-effect waves-light btn red darken-2 modal-trigger" href="#feature-recipe3">
                 <i class="material-icons left">open_in_new</i>recipe</a>
             </div>
+
+               <!-- Modal Structure -->
+               <div id="feature-recipe3" class="modal">
+                  <div class="modal-content">
+                    <h4>Recipe Name</h4>
+                    <p>A bunch of text</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+                  </div>
+                </div>
           </div>
         </div>
 
