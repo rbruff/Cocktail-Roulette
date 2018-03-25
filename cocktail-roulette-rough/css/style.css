@@ -44,6 +44,9 @@ p {
     border: 1px solid red;
     margin-right: 10px;
   }
+  .modal-content{
+    color: black;
+  }
 #parallax-img{
   width: 100%;
 }
