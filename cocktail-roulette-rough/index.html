@@ -4,11 +4,11 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cocktail Roulette</title>
+  <title>App rough draft</title>
 
   <!-- google fonts  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Mogra|Pacifico|Revalia" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Megrim|Oleo+Script+Swash+Caps|Pacifico|Poiret+One" rel="stylesheet">
   <!-- materialize -->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <!-- style sheet -->
@@ -16,14 +16,20 @@
   <!-- hover.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css" />
   <!-- favicon -->
-  <link rel="icon" type="image/png" href="images/icons-collection/png/007-cocktail.png" />
+  <link rel="icon" type="image/png" href="images/icons-collection/png/010-cocktail-1.png" />
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   <!-- jQuery CDN -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 
 <body class="black">
   <!-- navbar -->
   <nav class="black" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo" style="color:red; font-family: 'Revalia', cursive;">
+      <a id="logo-container" href="#" class="brand-logo" style="color:red;font-family: 'Megrim', cursive;">
         <img class="responsive-img" id="logo-icon" src="images/icons-collection/png/009-glass.png">Cocktail Roulette </a>
       </a>
       <ul class="right hide-on-med-and-down">
@@ -69,17 +75,10 @@
       <div class="container">
         <br>
         <br>
-
         <h1 class="header center white-text" style="font-family: 'Pacifico', cursive; font-size:60pt;">What are you drinking tonight???</h1>
-        <!-- <div class="row center">
-
-          <h5 class="header col s12 light">Click the shaker to find out!</h5>
-        </div> -->
-        <!-- Cocktail Shaker button with function playing cocktail shaker sound on click -->
         <div class="row center">
-          <button class="btn btn-warning btn-xs shaker-button"><span class="glyphicon glyphicon-music"></span> Click the shaker to find out!</button>
+          <h5 class="header col s12 light">Click the shaker to find out!</h5>
         </div>
-
         <div class="row center">
           <button class="waves-effect waces-light black hvr-buzz" id="shaker-btn">
             <img class="responsive-img" id="shaker-icon" src="images/icons-collection/png/28-oz-3-piece-ss-cocktail-shaker-logo-designer_1.png">
@@ -109,14 +108,14 @@
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-              <img src="images/GreenMint.jpg">
-              <span class="card-title"> Mezcal Margarita with Jalapeno</span>
+              <img src="images/250x250.png">
+              <span class="card-title">Name of Drink</span>
             </div>
             <div class="card-content black">
-              <p class="center">"Smokey, Spicy, Sweet and Tart | A fave of mine "
+              <p class="center">"Enter comment here"
               </p>
               <p class="center">Selected by:
-                <br>Sienna</p>
+                <br>your name</p>
             </div>
             <div class="card-action center black">
               <a class="waves-effect waves-light btn red darken-2 modal-trigger" href="#feature-recipe1">
@@ -153,16 +152,16 @@
                 <i class="material-icons left">open_in_new</i>recipe</a>
             </div>
 
-            <!-- Modal Structure -->
-            <div id="feature-recipe2" class="modal">
-              <div class="modal-content">
-                <h4>Recipe Name</h4>
-                <p>A bunch of text</p>
-              </div>
-              <div class="modal-footer">
-                <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
-              </div>
-            </div>
+              <!-- Modal Structure -->
+              <div id="feature-recipe2" class="modal">
+                  <div class="modal-content">
+                    <h4>Recipe Name</h4>
+                    <p>A bunch of text</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+                  </div>
+                </div>
           </div>
         </div>
 
@@ -183,16 +182,16 @@
                 <i class="material-icons left">open_in_new</i>recipe</a>
             </div>
 
-            <!-- Modal Structure -->
-            <div id="feature-recipe3" class="modal">
-              <div class="modal-content">
-                <h4>Recipe Name</h4>
-                <p>A bunch of text</p>
-              </div>
-              <div class="modal-footer">
-                <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
-              </div>
-            </div>
+               <!-- Modal Structure -->
+               <div id="feature-recipe3" class="modal">
+                  <div class="modal-content">
+                    <h4>Recipe Name</h4>
+                    <p>A bunch of text</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+                  </div>
+                </div>
           </div>
         </div>
 
@@ -225,13 +224,156 @@
           <h3>
             <i class="mdi-content-send brown-text"></i>
           </h3>
-          <h4>this is where the drinks and videos should be generated</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque
-            tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a
-            sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam
-            eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum
-            sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum
-            primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <form>
+        
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                            <form>
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1">Search</label>
+                                      <input type="text" class="form-control" id="search-input" aria-describedby="emailHelp" placeholder="ex. tequila">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" style="margin-bottom: 40px;" id="search-btn">Search</button>
+                                  </form>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row mb-2 d-none" id="drinkTemplate">
+                    <!-- <div class="col-md-6"> -->
+                      <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                          <div class= "container">
+                              <h3 class="mb-0 card-title" style="color: black !important; font-weight:bold !important; text-decoration: underline; margin-bottom: 20px !important;">Title</h3>
+                              <div>
+                        <div class="card-body d-flex flex-column align-items-start" style="margin-left:20px; width:50%%; float:left;">
+                          <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
+                         
+                          
+
+                      <p style="color: black !important; font-weight:bold !important;"> Ingredients</p>
+                         <p class="IngredientsList mb-auto" style="color:black; text-align:left;">This is a wider card with supporting text below as a natural lead-in to additional content.</p> 
+                        </div>
+                        <!-- <img class="card-img-right flex-auto d-none d-md-block embed-responsive embed-responsive-16by9" data-src="holder.js/200x250?theme=thumb" alt="Card image cap" style="height:75%; width: 27%;"> -->
+
+                        
+                        
+
+                          </div>
+
+                          <div class="container video-area" style="height:75%;"><iframe class="embed-responsive-item videoTag" src="http://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen style="height: 75%; width: 60%;"></iframe></div>
+
+                          <div class="container">
+                          <div class="mb-1 text-muted"  >
+                            <p style="color: black !important; font-weight:bold !important; text-align:left !important; margin-top: 50px;">Mixing Instruction</p>
+                          <p class="card-text mb-auto" style="color:black; text-align:left; width:60%;">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                          </div>
+                        </div>
+    
+                        </div>
+                        <!-- <img class="card-img-right flex-auto d-none d-md-block embed-responsive embed-responsive-16by9" data-src="holder.js/200x250?theme=thumb" alt="Card image cap" style="height:75%; width: 75%;"> -->
+                        <!-- <embed class="videoTag" src="http://www.youtube.com/v/GlIzuTQGgzs?version=3&amp;hl=en_US&amp;rel=0&amp;autohide=1&amp;autoplay=1" wmode="transparent" type="application/x-shockwave-flash" width="100%" height="100%" allowfullscreen="true" title="Adobe Flash Player"> -->
+                        <!-- <div class="container video-area"><iframe class="embed-responsive-item videoTag" src="http://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen style="max-height: 173px;"></iframe></div> -->
+                        <!-- <div class="container picture-area"> -->
+                          <!-- <img class="card-img-right flex-auto d-none d-md-block embed-responsive embed-responsive-16by9" data-src="holder.js/200x250?theme=thumb" alt="Card image cap" style="height:75%; width: 75%;"> -->
+                        <!-- </div> -->
+                      </div>
+                      
+                    <!-- </div> -->
+            </div>
+    
+            <div class="row" id="drinkSection" style="max-height:100%;"></div>
+    
+          
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+    <script>
+    var input = $("#search-input");
+    var displaySection = $("#drinkSection");
+    var drinkTemplate = $("#drinkTemplate");
+    
+    
+    $("#search-btn").click(function(e) {
+    
+      // addb.init({
+      //     appId: 16770
+      //       });
+        console.log("This btn was clicked");
+        console.log("about to access url:", "https://addb.absolutdrinks.com/quickSearch/drinks/" + input.val() + "/?apiKey=bfdb7370601d41f1b961fded831fc00b&pageSize=125unction");
+        e.preventDefault();
+        $.ajax({
+            method: "GET",
+            //url: "https://addb.absolutdrinks.com/quickSearch/drinks/margarita/?apiKey=bfdb7370601d41f1b961fded831fc00b&pageSize=125",
+            url: "https://addb.absolutdrinks.com/quickSearch/drinks/" + input.val() + "/?apiKey=bfdb7370601d41f1b961fded831fc00b&pageSize=125",
+            dataType: "jsonp",
+            callback: "drinks",
+            error: function(error) {
+              console.log("error happened");
+              console.log(error);
+            },
+            success: function(data) {
+                console.log("This worked");
+                console.log(data);
+                displaySection.html("");
+                for( i = 0; i < 1; i ++) {
+                var newCard = drinkTemplate.clone();
+                var results = (data.totalResult);
+                console.log("This is Number of results" + results);
+                var randomDrink = Math.floor(Math.random() * results);
+                console.log("This is Number of random Drink" + randomDrink);
+                var ingredientNumber = (data.result[randomDrink].ingredients.length);
+                console.log(ingredientNumber + "These are the # ingredients");
+                var videoID = data.result[randomDrink].videos[0].video;
+                console.log("This is the video code" + videoID);
+                var allIngredients = "";
+                for (j = 0; j < ingredientNumber; j++) {
+                    // console.log("Testing" + data.result[randomDrink].ingredients[j].textPlain );
+                    allIngredients += data.result[randomDrink].ingredients[j].textPlain + "<br>";
+                   console.log(allIngredients);
+                   
+                   
+                //    allIngredients.append(p.newCard);
+                //    newCard.find(".IngredientsList").html(allIngredients);
+    
+                }
+                
+                newCard.find(".IngredientsList").html(allIngredients);
+    
+                newCard.find(".card-title").html(data.result[randomDrink].name);
+                newCard.find(".card-text").html(data.result[randomDrink].descriptionPlain.split("\n"));
+                newCard.find(".videoTag").attr("src", "https://www.youtube.com/embed/" + videoID + "?rel=0&autoplay=1");
+                newCard.find(".card-img-right").attr("src", "https://assets.absolutdrinks.com/drinks/solid-background-white/soft-shadow/floor-reflection/" + data.result[i].name.replace(/\s+/g, "-") + ".png");
+                newCard.removeClass("d-none");
+                displaySection.append(newCard);
+    
+                
+                
+                
+                }
+    
+                
+    
+               
+    
+    
+    
+    
+                
+                
+            }
+    
+    
+        });
+    
+    })
+    
+    
+    
+    
+    
+    </script>
         </div>
       </div>
 
@@ -303,6 +445,8 @@
 
 
     <!--  Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
