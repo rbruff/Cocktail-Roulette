@@ -4,11 +4,11 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>App rough draft</title>
+  <title>Cocktail Roulette</title>
 
   <!-- google fonts  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Megrim|Oleo+Script+Swash+Caps|Pacifico|Poiret+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Mogra|Pacifico|Revalia" rel="stylesheet">
   <!-- materialize -->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <!-- style sheet -->
@@ -16,14 +16,14 @@
   <!-- hover.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css" />
   <!-- favicon -->
-  <link rel="icon" type="image/png" href="images/icons-collection/png/010-cocktail-1.png" />
+  <link rel="icon" type="image/png" href="images/icons-collection/png/007-cocktail.png" />
 </head>
 
 <body class="black">
   <!-- navbar -->
   <nav class="black" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo" style="color:red;font-family: 'Megrim', cursive;">
+      <a id="logo-container" href="#" class="brand-logo" style="color:red; font-family: 'Revalia', cursive;">
         <img class="responsive-img" id="logo-icon" src="images/icons-collection/png/009-glass.png">Cocktail Roulette </a>
       </a>
       <ul class="right hide-on-med-and-down">
@@ -37,7 +37,7 @@
           <div id="age-modal" class="modal">
             <div class="modal-content">
               <h4>Age Verification</h4>
-              <p>A bunch of text</p>
+              <p>Are you 21 or older?</p>
             </div>
             <div class="modal-footer">
               <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
@@ -69,13 +69,16 @@
       <div class="container">
         <br>
         <br>
+
         <h1 class="header center white-text" style="font-family: 'Pacifico', cursive; font-size:60pt;">What are you drinking tonight???</h1>
         <!-- <div class="row center">
+
           <h5 class="header col s12 light">Click the shaker to find out!</h5>
         </div> -->
         <!-- Cocktail Shaker button with function playing cocktail shaker sound on click -->
         <div class="row center">
-          <button class="btn btn-warning btn-xs shaker-button"><span class="glyphicon glyphicon-music"></span> Click the shaker to find out!</button>
+          <button class="btn btn-warning btn-xs shaker-button">
+            <span class="glyphicon glyphicon-music"></span> Click the shaker to find out!</button>
         </div>
 
         <div class="row center">
@@ -107,7 +110,7 @@
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-              <img src="images/GreenMint.jpg">
+              <img id="feature-drink" src="images/GreenMint.jpg">
               <span class="card-title"> Mezcal Margarita with Jalapeno</span>
             </div>
             <div class="card-content black">
@@ -151,46 +154,46 @@
                 <i class="material-icons left">open_in_new</i>recipe</a>
             </div>
 
-              <!-- Modal Structure -->
-              <div id="feature-recipe2" class="modal">
-                  <div class="modal-content">
-                    <h4>Recipe Name</h4>
-                    <p>A bunch of text</p>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
-                  </div>
-                </div>
+            <!-- Modal Structure -->
+            <div id="feature-recipe2" class="modal">
+              <div class="modal-content">
+                <h4>Recipe Name</h4>
+                <p>A bunch of text</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-              <img src="images/250x250.png">
-              <span class="card-title">Name of Drink</span>
+              <img id="feature-drink" src="images/bourbonmule.jpg">
+              <span class="card-title">Bourbon Mule</span>
             </div>
             <div class="card-content black">
-              <p class="center">"Enter comment here"
+              <p class="center">"Bourbon and Fresh Ginger Puree and Lime | How can you go wrong?"
               </p>
               <p class="center">Selected by:
-                <br>your name</p>
+                <br>Edgar</p>
             </div>
             <div class="card-action center black">
               <a class="waves-effect waves-light btn red darken-2 modal-trigger" href="#feature-recipe3">
                 <i class="material-icons left">open_in_new</i>recipe</a>
             </div>
 
-               <!-- Modal Structure -->
-               <div id="feature-recipe3" class="modal">
-                  <div class="modal-content">
-                    <h4>Recipe Name</h4>
-                    <p>A bunch of text</p>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
-                  </div>
-                </div>
+            <!-- Modal Structure -->
+            <div id="feature-recipe3" class="modal">
+              <div class="modal-content">
+                <h4>Recipe Name</h4>
+                <p>A bunch of text</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -215,6 +218,7 @@
   </div>
 
   <!-- next section -->
+  <!-- next section -->
   <div class="container">
     <div class="section">
 
@@ -223,87 +227,125 @@
           <h3>
             <i class="mdi-content-send brown-text"></i>
           </h3>
-          <h4>this is where the drinks and videos should be generated</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque
-            tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a
-            sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam
-            eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum
-            sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum
-            primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
-      </div>
+          <form>
 
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <!-- <h5 class="header col s12 light">coool text or quote??</h5> -->
-        </div>
-      </div>
-    </div>
-    <div class="parallax">
-      <img src="images/dimBar.jpg" alt="Dimly lit bar" id="parallax-img">
-    </div>
-  </div>
-
-  <!-- footer -->
-  <footer class="page-footer black">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of up and coming full stack web developers working on this project like it's our full time job! This
-            web app was created to fine tune our skills in UI/UX design, APIs, and Javascript. Contact any of us to take
-            on your next webpage and/or web app.</p>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-6">
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Search</label>
+                      <input type="text" class="form-control" id="search-input" aria-describedby="emailHelp" placeholder="ex. tequila">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="margin-bottom: 40px;" id="search-btn">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-2 d-none" id="drinkTemplate">
+              <!-- <div class="col-md-6"> -->
+              <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="container">
+                  <h3 class="mb-0 card-title" style="color: black !important; font-weight:bold !important; text-decoration: underline; margin-bottom: 20px !important;">Title</h3>
+                  <div>
+                    <div class="card-body d-flex flex-column align-items-start" style="margin-left:20px; width:50%; float:left;">
+                      <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
 
 
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Team Members</h5>
-          <ul>
-            <li>
-              <a class="white-text" href="#!">Renee</a>
-            </li>
-            <li>
-              <a class="white-text" href="#!">Sienna</a>
-            </li>
-            <li>
-              <a class="white-text" href="#!">Edgar</a>
-            </li>
-            <li>
-              <a class="white-text" href="#!">Darrell</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li>
-              <a class="white-text" href="#!">Link 1</a>
-            </li>
-            <li>
-              <a class="white-text" href="#!">Link 2</a>
-            </li>
-            <li>
-              <a class="white-text" href="#!">Link 3</a>
-            </li>
-            <li>
-              <a class="white-text" href="#!">Link 4</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+
+                      <p style="color: black !important; font-weight:bold !important;"> Ingredients</p>
+                      <p class="IngredientsList mb-auto" style="color:black; text-align:left;">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <!-- <img class="card-img-right flex-auto d-none d-md-block embed-responsive embed-responsive-16by9" data-src="holder.js/200x250?theme=thumb" alt="Card image cap" style="height:75%; width: 27%;"> -->
 
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
+
+
+                  </div>
+
+                  <div class="container video-area" style="height:75%;">
+                    <iframe class="embed-responsive-item videoTag" src="http://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen
+                      style="height: 75%; width: 60%;"></iframe>
+                  </div>
+
+                  <div class="container">
+                    <div class="mb-1 text-muted">
+                      <p style="color: black !important; font-weight:bold !important; text-align:left !important; margin-top: 50px;">Mixing Instruction</p>
+                      <p class="card-text mb-auto" style="color:black; text-align:left; width:60%;">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="parallax-container valign-wrapper">
+                  <div class="section no-pad-bot">
+                    <div class="container">
+                      <div class="row center">
+                        <!-- <h5 class="header col s12 light">coool text or quote??</h5> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="parallax">
+                    <img src="images/dimBar.jpg" alt="Dimly lit bar" id="parallax-img">
+                  </div>
+                </div>
+
+                <!-- footer -->
+                <footer class="page-footer black">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col l6 s12">
+                        <h5 class="white-text">Company Bio</h5>
+                        <p class="grey-text text-lighten-4">We are a team of up and coming full stack web developers working on this project like it's our full
+                          time job! This web app was created to fine tune our skills in UI/UX design, APIs, and Javascript.
+                          Contact any of us to take on your next webpage and/or web app.</p>
+
+
+                      </div>
+                      <div class="col l3 s12">
+                        <h5 class="white-text">Team Members</h5>
+                        <ul>
+                          <li>
+                            <a class="white-text" href="https://github.com/siennaspargo">Renee</a>
+                          </li>
+                          <li>
+                            <a class="white-text" href="https://github.com/siennaspargo">Sienna</a>
+                          </li>
+                          <li>
+                            <a class="white-text" href="https://github.com/santosedgar5565">Edgar</a>
+                          </li>
+                          <li>
+                            <a class="white-text" href="https://github.com/Darrell43">Darrell</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col l3 s12">
+                        <h5 class="white-text">Connect</h5>
+                        <ul>
+                          <li>
+                            <a class="white-text" href="https://github.com/rbruff">https://github.com/rbruff</a>
+                          </li>
+                          <li>
+                            <a class="white-text" href="https://github.com/siennaspargo">https://github.com/siennaspargo</a>
+                          </li>
+                          <li>
+                            <a class="white-text" href="https://github.com/santosedgar5565">https://github.com/santosedgar5565</a>
+                          </li>
+                          <li>
+                            <a class="white-text" href="https://github.com/Darrell43">https://github.com/Darrell43</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!--  Scripts-->
+                  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+                  <script src="js/materialize.js"></script>
+                  <script src="js/init.js"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </body>
 
