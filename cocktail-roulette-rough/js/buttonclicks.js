@@ -12,7 +12,5 @@ $(document).ready(function () {
             // Shaker Button
             $(".hvr-buzz").on("click", function () {
                     audioElement.play();
-                }
-
-
             });
+            
