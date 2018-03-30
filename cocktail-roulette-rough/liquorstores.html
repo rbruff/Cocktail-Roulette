@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cocktail Roulette</title>
+
+    <!-- google fonts  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mogra|Pacifico|Revalia" rel="stylesheet">
+    <!-- materialize -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!-- style sheet -->
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!-- hover.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/icons-collection/png/007-cocktail.png" />
+</head>
+
+<body>
+
+    <body class="black">
+        <!-- navbar -->
+        <nav class="black" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="#" class="brand-logo" style="color:red; font-family: 'Revalia', cursive;">
+                    <img class="responsive-img" id="logo-icon" src="images/icons-collection/png/009-glass.png">Cocktail Roulette </a>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <!-- Age Modal -->
+                        <a class="modal-trigger" href="#age-modal">Age Verification</a>
+                        <!-- Modal Structure -->
+                        <div id="age-modal" class="modal">
+                            <div class="modal-content">
+                                <h4>Age Verification</h4>
+                                <p>A bunch of text</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="liquorstores.html">Liquor Stores Near Me</a>
+                    </li>
+                    <li>
+                        <a href="#">Search</a>
+                    </li>
+                </ul>
+
+                <ul id="nav-mobile" class="side-nav">
+                    <li>
+                        <a href="#">Navbar Link</a>
+                    </li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse btn-floating waves-effect waves-light red">
+                    <i class="material-icons">menu</i>
+                </a>
+            </div>
+        </nav>
+
+        <!-- HOME w roulette btn -->
+        <div id="index-banner" class="parallax-container">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <br>
+                    <br>
+
+                    <h1 class="header center white-text" style="font-family: 'Pacifico', cursive; font-size:60pt;">Nearby Liquor Stores</h1>
+                    <!-- <div class="row center">
+              
+                        <h5 class="header col s12 light">Click the shaker to find out!</h5>
+                      </div> -->
+                    <!-- Cocktail Shaker button with function playing cocktail shaker sound on click -->
+
+
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+            <div class="parallax">
+                <img src="images/GoldenBar.jpg" alt="Bar Shelves">
+            </div>
+        </div>
+
+        <!-- featured drink section -->
+        <div class="container black white-text">
+            <div class="section">
+
+
+
+                <!--   row of cards   -->
+
+            </div>
+
+        </div>
+
+
+        <!-- google maps liquor stores  -->
+        <div id="googleMap3" style="width:100%;height:500px;"></div>
+        <br>
+
+        <div id="map" style="width:100%;height:500px"></div>
+        <br>
+
+        <script>
+            function myMap() {
+
+                var mapOptions3 = {
+                    center: new google.maps.LatLng(39.8338513, -74.871826),
+                    zoom: 9,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                };
+                var map3 = new google.maps.Map(document.getElementById("googleMap3"), mapOptions3);
+
+                var marker = new google.maps.Marker({
+                    position: center,
+                });
+                marker.setMap(map3);
+
+
+            }
+
+            
+
+
+            function myMap1() {
+                var mapCanvas = document.getElementById("map");
+                mapTypeId: google.maps.MapTypeId.HYBRID
+                var myCenter = new google.maps.LatLng(51.508742, -0.120850);
+                var mapOptions = { center: myCenter, zoom: 9 };
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+                var marker = new google.maps.Marker({
+                    position: myCenter,
+                    animation: google.maps.Animation.BOUNCE
+                });
+                marker.setMap(map);
+            }
+
+        </script>
+
+        <!-- next section -->
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <div class="container">
+            <form>
+
+
+
+                <div class="row mb-2 d-none" id="drinkTemplate">
+                    <!-- <div class="col-md-6"> -->
+                    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                        <div class="card-body d-flex flex-column align-items-start" style="margin-left:20px;">
+                            <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
+                            <h3 class="mb-0 card-title">Title</h3>
+                            <div class="mb-1 text-muted">Ingredients</div>
+                            <p class="IngredientsList mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                            <div class="mb-1 text-muted">Mixing Instruction</div>
+                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+
+                        </div>
+                        <!-- <img class="card-img-right flex-auto d-none d-md-block embed-responsive embed-responsive-16by9" data-src="holder.js/200x250?theme=thumb" alt="Card image cap" style="height:75%; width: 75%;"> -->
+                        <!-- <embed class="videoTag" src="http://www.youtube.com/v/GlIzuTQGgzs?version=3&amp;hl=en_US&amp;rel=0&amp;autohide=1&amp;autoplay=1" wmode="transparent" type="application/x-shockwave-flash" width="100%" height="100%" allowfullscreen="true" title="Adobe Flash Player"> -->
+                        <iframe class="embed-responsive-item videoTag" src="http://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen style="max-height: 173px;"></iframe>
+                    </div>
+
+                    <!-- </div> -->
+                </div>
+
+                <div class="row" id="drinkSection" style="max-height:500px;"></div>
+
+
+
+
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                    crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                    crossorigin="anonymous"></script>
+        </div>
+
+
+        <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <div class="row center">
+                        <!-- <h5 class="header col s12 light">coool text or quote??</h5> -->
+                    </div>
+                </div>
+            </div>
+            <div class="parallax">
+                <img src="images/dimBar.jpg" alt="Dimly lit bar" id="parallax-img">
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="page-footer black">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Company Bio</h5>
+                        <p class="grey-text text-lighten-4">We are a team of up and coming full stack web developers working on this project like it's our full
+                            time job! This web app was created to fine tune our skills in UI/UX design, APIs, and Javascript.
+                            Contact any of us to take on your next webpage and/or web app.</p>
+
+
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Team Members</h5>
+                        <ul>
+                            <li>
+                                <a class="white-text" href="#!">Renee</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#!">Sienna</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#!">Edgar</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#!">Darrell</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Connect</h5>
+                        <ul>
+                            <li>
+                                <a class="white-text" href="#!">Link 1</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#!">Link 2</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#!">Link 3</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="#!">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--  Scripts-->
+            <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+            <script src="js/materialize.js"></script>
+            <script src="js/init.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3WDuQ8ARP6gfg-0hwZTLuBaIrMJkLosI&callback=myMap"></script>
+
+    </body>
+
+</body>
+
+</html>
